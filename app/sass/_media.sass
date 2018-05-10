@@ -114,6 +114,15 @@
 					transform: rotate(-45deg)
 	// NAVIGATION MEDIA STYLES END 
 
+	// SECTION ABOUT MEDIA STYLES START 
+	.about
+		&-text
+			font-size: 1.125rem
+		&-img
+			max-width: 50%
+			margin: 0 auto
+	// SECTION ABOUT MEDIA STYLES END 
+
 	/**/
 
 
@@ -128,7 +137,14 @@
 	
 	// GENERAL MEDIA STYLES START
 	.subtitle
+		display: block
+		padding-bottom: 1.5rem
 		font-size: 22px
+		text-align: center
+		&::before
+			height: 3px
+			right: 50%
+			transform: translateX(50%)
 	.text
 		font-size: 16px
 	// GENERAL MEDIA STYLES END
@@ -147,18 +163,24 @@
 			&:first-letter
 				margin-right: -5px
 		&-subtitle
-			display: block
-			padding-bottom: 1.5rem
-			&::before
-				height: 3px
-				right: 50%
-				transform: translateX(50%)
+			text-align: left
+			
 	// SECTION PRESENTATION MEDIA STYLES END
 	
 	// NAVIGATION MEDIA STYLES START 
 	.nav-bar
 		top: 50px
 	// NAVIGATION MEDIA STYLES END 
+
+	// SECTION ABOUT MEDIA STYLES START 
+	.about
+		&-text
+			font-size: 1rem
+			line-height: 1.2
+		&-img
+			max-width: 260px
+			margin: 0 auto
+	// SECTION ABOUT MEDIA STYLES END 
 
 	/**/
 
