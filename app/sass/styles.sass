@@ -279,8 +279,158 @@ ul
 .product
 	padding: 0 15px
 	&-subtitle
-		margin-right: 175px
+		margin-right: 177px
+	&-models
+		margin-top: 15px
+	&-model
+		height: 275px
+		margin: 0 2px 4px
+		position: relative
+		background-color: $accent-color
+		overflow: hidden
+		z-index: 1
+		// display: flex
+		// align-items: center
+		// justify-content: center
+		// background: $accent-color url('../img/model1.jpg') no-repeat 20% 50%
+		// background-size: cover
+		&::before
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+			background: rgba(#000,.2)
+			z-index: 1
+
+	&-img
+		position: relative
+		&[src*="1"]
+			left: -52px
+		&[src*="3"]
+			left: -45%
+		&[src*="4"]
+			left: -34%
+		&[src*="5"]
+			left: -58%
+			top: -21%
+		&[src*="7"]
+			left: -50%
+		&[src*="10"]
+			top: -16%
+    
+	&-title
+		position: absolute
+		left: 0
+		bottom: 38px
+		width: 90%
+		height: 60px
+		padding: 0 15px 0 25px
+		font-size: 0.9375rem
+		line-height: 1.1
+		text-transform: uppercase
+		color: lighten($accent-color, 10%)
+		background-color: #0f0f0f
+		border-right: 12px solid $accent-color
+		z-index: 2
+		&::first-letter
+			margin-right: 1px
+			margin-left: -16px
+			font-size: 1.5625rem
+			font-weight: 700
+			color: $accent-color
+			text-transform: uppercase
+		&:not(.two-string)
+			line-height: 60px
+		&.two-string
+			padding-top: 7px
+		&.two-string-edit
+			padding-left: 30px
+			&::first-letter
+				margin-left: -20px
+
+	&-info
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(#131313,.85)
+		opacity: 0
+		visibility: hidden
+		z-index: 3
+		transition: all .3s
+		&-btn
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%) scale(0)
+			background-color: transparent
+			border: 1px solid $accent-color
+			font-size: 15px
+			color: $accent-color
+			transition: all .3s
+			&:hover
+				background-color: $accent-color
+				color: #fff
+				transition: all .3s
+
+.product-model:hover
+	.product-title
+		visibility: hidden
+	.product-info
+		opacity: 1
+		visibility: visible
+	.product-info-btn
+		transform: translate(-50%, -50%) scale(1)
+
+// MODAL WINDOW START		
+.product-modal-wrap
+	max-width: 978px
+	width: 100%
+	margin: 0 auto
+.product-modal
+	padding: 95px 85px
+	background-image: linear-gradient(90deg, $accent-color, lighten($accent-color, 30%), $accent-color)
+	position: relative
+	&-top
+		background: url('../img/prdoduct-modal-top-bg.jpg') no-repeat
+		background-size: cover
+		position: relative
+		&::before
+			content: ''
+			display: block
+			width: 244px
+			height: 227px
+			position: absolute
+			right: -50px
+			bottom: -3px
+			background: url('../img/product-modal-img11.png') no-repeat 0 0
+			z-index: 0
+	&-title, &-subtitle
+		margin: 0
+		color: $accent-color
+	&-title
+		font-size: 25px
+		font-weight: 700
+		text-transform: uppercase
 		
+	&-subtitle
+		font-size: 20px
+		font-weight: 400
+	.product-price
+		margin-top: 9px
+		font-size: 20px
+		color: #fff
+		b
+			font-size: 25px
+		
+	
+	
+
+
 // ============== SECTION PRODUCT STYLES END ================
 
 // ============== CONTENT STYLES END =================
