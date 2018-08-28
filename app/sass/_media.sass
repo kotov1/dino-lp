@@ -2,6 +2,10 @@
 
 
 @media only screen and (max-width : 1199px)
+	// CONTENT MEDIA STYLES START
+	.content
+		background-position: 0 0, 0 1300px
+	// CONTENT MEDIA STYLES END
 
 	// SECTION PRESENTATION MEDIA STYLES START
 	.presentation
@@ -39,17 +43,24 @@
 			position: fixed
 			right: -9000px
 
+		&-bar-wrap
+			width: 42px
+			height: 36px
+			position: fixed
+			top: 40px
+			right: 15px
+			background-color: $sub-color
+			border-radius: 5px
+			z-index: 10
 		&-bar
+			position: absolute
+			top: 47%
+			left: 15%
 			transition: all .25s
-			content: ""
 			height: 3px
 			width: 30px
 			border-radius: 15px
 			background-color: $accent-color
-			position: fixed
-			top: 61px
-			right: 15px
-			z-index: 10
 			&::before, &::after  
 				transition: all .25s
 				content: ""
@@ -137,17 +148,36 @@
 			padding-right: 70px
 	// SECTION PRODUCT MEDIA STYLES END
 
+	// MODAL WINDOW MEDIA STYLES START
+	.product-modal
+		padding: 65px 60px
+	.product-modal-title
+		max-width: 100%
+	.product-modal-top:before
+		display: none
+	// MODAL WINDOW MEDIA STYLES END
+
 	/**/
 
 
 
 @media only screen and (max-width : 991px)
 
+	// CONTENT MEDIA STYLES START
+	.content
+		background-position: 0 0, 0 2100px
+	// CONTENT MEDIA STYLES END
+
 	/**/
 
 
 
 @media only screen and (max-width : 767px)
+
+	// CONTENT MEDIA STYLES START
+	.content
+		background-position: 0 0, 0 3800px
+	// CONTENT MEDIA STYLES END
 	
 	// GENERAL MEDIA STYLES START
 	.subtitle
@@ -182,8 +212,8 @@
 	// SECTION PRESENTATION MEDIA STYLES END
 	
 	// NAVIGATION MEDIA STYLES START 
-	.nav-bar
-		top: 50px
+	.nav-bar-wrap
+		top: 35px
 	// NAVIGATION MEDIA STYLES END 
 
 	// SECTION ABOUT MEDIA STYLES START 
@@ -210,12 +240,31 @@
 			.product-img[src*="3"]
 				left: -40%
 			.product-img[src*="5"]
-				left: -52%
+				left: -37%
 			.product-img[src*="7"]
-				left: -45%
+				left: -22%
 		.product-title.two-string
 			padding-right: 85px
 	// SECTION PRODUCT MEDIA STYLES END
+
+	// MODAL WINDOW MEDIA STYLES START
+	.mfp-close
+		top: 5px
+		right: 5px
+		&:active
+			top: 4px
+	.product-modal
+		padding: 33px
+	.product-modal-top, .product-modal-bottom
+		padding-left: 15px
+	// MODAL WINDOW MEDIA STYLES END
+
+	//  SECTION VIDEO MEDIA STYLES START 
+	.video
+		padding: 0
+	.videoPoster:before
+		transform: translate(-50%, -50%) scale(.75)
+	//  SECTION VIDEO MEDIA STYLES END 
 
 	/**/
 
@@ -226,6 +275,24 @@
 
 
 @media only screen and (max-width : 480px)
+
+	// CONTENT MEDIA STYLES START
+	.content
+		background-position: 0 0, 0 4100px
+	// CONTENT MEDIA STYLES END
+
+	// MODAL WINDOW MEDIA STYLES START
+	.mfp-close
+		right: 0
+	.product-modal
+		padding: 0 30px 0 0
+	.product-modal-bottom
+		padding-bottom: 20px
+	.social
+		margin-top: 25px
+		position: static
+		text-align: center
+	// MODAL WINDOW MEDIA STYLES END
 
 	/**/
 

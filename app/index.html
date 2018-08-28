@@ -28,7 +28,7 @@
 <body>
 
 	<!-- SECTION PRESENTATION START -->
-	<section class="presentation">
+	<section class="presentation" id="presentation">
 		<div class="container">
 			<div class="row">
 				<div class="col-2"><img src="img/logo.png" alt="logo" class="logo img-responsive"></div>
@@ -54,11 +54,11 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="nav-menu">
-						<div class="nav-bar"></div>
+						<div class="nav-bar-wrap"><div class="nav-bar"></div></div>
 						<ul class="nav-links">
-							<li><a class="nav-link" href="#">главная</a></li>
-							<li><a class="nav-link" href="#">продукты</a></li>
-							<li><a class="nav-link" href="#">партнерские программы</a></li>
+							<li><a class="nav-link" href="#presentation">главная</a></li>
+							<li><a class="nav-link" href="#product">продукты</a></li>
+							<li><a class="nav-link" href="#partners">партнерские программы</a></li>
 							<li><a class="nav-link" href="#">инвестиции</a></li>
 							<li><a class="nav-link" href="#">реализованные проекты</a></li>
 							<li><a class="nav-link" href="#">контакты</a></li>
@@ -74,11 +74,11 @@
 		<div class="container">
 			<div class="inner-bg">
 
-		<!-- ABOUT START -->
-		<section class="about">
+		<!-- SECTION ABOUT START -->
+		<section class="about" id="about">
 			<div class="row">
 				<div class="col-12 col-xl-7">
-					<h2 class="subtitle"> О компании</h2>
+					<h2 class="subtitle">О компании</h2>
 					<p class="about-text">Добро пожаловать в удивительный мир доисторических животных, воссозданный с использованием современных технологий и материалов – промышленный дизайн, электронные технологии, программное обеспечение, искусственный интеллект, аудио и визуальные эффекты, уникальные материалы, высококачественная скульптурная обработка.</p>
 					<p class="about-text">У нас вы можете заказать не только аниматронные (роботизированные, двигающиеся) модели древних ящеров, водных и летающих рептилий, гигантских насекомых, доисторических животных, пещерных людей, но и сопутствующие тематические аксессуары, такие как аттракционы для катания, костюмы динозавров, реквизит для палеонтологических раскопок, светотехнику и многое другое. А также расширенный ассортимент для создания других тематических экспозиций и площадок – говорящие деревья, аниматронные модели и фигуры героев мультипликационных и художественных фильмов, литературных героев.</p>
 					<p class="about-text">Из последних новинок – Дино-лазертаг или оборудование для площадки «Охота на Динозавров». Это аниматронные модели (фигуры), оснащенные технологией Лазертаг.</p>
@@ -90,159 +90,410 @@
 				</div>
 			</div>
 		</section>
-		<!-- ABOUT END -->
+		<!-- SECTION ABOUT END -->
 		
-		<!-- PRODUCT START -->
-		<section class="product">
+		<!-- SECTION PRODUCT START -->
+		<section class="product" id="product">
 			<div class="row">
 				<div class="col-12 d-flex justify-content-center justify-content-md-end">
 					<h2 class="subtitle product-subtitle">Наши модели</h2>
 				</div>
 				<div class="col-12">
 					<div class="product-models">
-						<div class="row no-gutters">
+						<div class="row justify-content-center no-gutters">
 
+							<!-- Продукт №1 -->
 							<div class="col-lg-3 col-md-6 col-12">
 								<figure class="product-model">
 									<img class="product-img" src="img/model1.jpg" alt="Динозавры">
 									<figcaption class="product-title">Dинозавры</figcaption>
 									<div class="product-info">
-										<button class="btn product-info-btn">Подробнее</button>
+										<button class="btn product-info-btn" id="product1-modalCall">Подробнее</button>
 									</div>
 								</figure>
 							</div>
+							<!-- Модальное окно к продукту №1 -->
+							<div class="product-modal-wrap mfp-hide" id="product1-modal">
+								<div class="product-modal">
+									<div class="mfp-close"></div>
+									<div class="product-modal-content">
+										<div class="product-modal-top  product-modal-top-1">
+											<h2 class="product-modal-title">Динозавры</h2>
+											<h3 class="product-modal-subtitle">Аниматронные модели</h3>
+											<div class="product-price">от <b>20 000</b> рублей</div>
+										</div> <!-- /.product-modal-top -->
+										<div class="product-modal-bottom">
+											<p class="product-modal-text">Здесь пишем не большой текст о компании и продукте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех.</p>
+											<button class="btn product-modal-btn">Получить прайс</button>
+											<div class="social">
+												<a href="#" class="social-link social-link-inst"></a>
+												<a href="#" class="social-link social-link-vk"></a>
+											</div>
+										</div> <!-- /.product-modal-bottom -->
+									</div> <!-- /.product-modal-content -->
+								</div> <!-- /.product-modal -->
+							</div> <!-- /.product-modal-wrap -->
 
+							<!-- Продукт №2 -->
 							<div class="col-lg-6 col-md-6 col-12">
 								<figure class="product-model">
 									<img class="product-img" src="img/model2.jpg" alt="Гигантские насекомые">
 									<figcaption class="product-title">Gигантские насекомые</figcaption>
 									<div class="product-info">
-										<button class="btn product-info-btn">Подробнее</button>
+										<button class="btn product-info-btn" id="product2-modalCall">Подробнее</button>
 									</div>
 								</figure>
 							</div>
+							<!-- Модальное окно к продукту №2 -->
+							<div class="product-modal-wrap mfp-hide" id="product2-modal">
+								<div class="product-modal">
+									<div class="mfp-close"></div>
+									<div class="product-modal-content">
+										<div class="product-modal-top product-modal-top-2">
+											<h2 class="product-modal-title">Гигантские насекомые</h2>
+											<h3 class="product-modal-subtitle">Аниматронные модели</h3>
+											<div class="product-price">от <b>20 000</b> рублей</div>
+										</div> <!-- /.product-modal-top -->
+										<div class="product-modal-bottom">
+											<p class="product-modal-text">Здесь пишем не большой текст о компании и продукте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех.</p>
+											<button class="btn product-modal-btn">Получить прайс</button>
+											<div class="social">
+												<a href="#" class="social-link social-link-inst"></a>
+												<a href="#" class="social-link social-link-vk"></a>
+											</div>
+										</div> <!-- /.product-modal-bottom -->
+									</div> <!-- /.product-modal-content -->
+								</div> <!-- /.product-modal -->
+							</div> <!-- /.product-modal-wrap -->
 
+							<!-- Продукт №3 -->
 							<div class="col-lg-3 col-md-6 col-12">
 								<figure class="product-model">
-									<img class="product-img" src="img/model3.jpg" alt="Доисторические животные">	
+									<img class="product-img" src="img/model3.jpg" alt="Доисторические животные">
 									<figcaption class="product-title two-string two-string-edit">Dоисторические животные</figcaption>
 									<div class="product-info">
-										<button class="btn product-info-btn">Подробнее</button>
+										<button class="btn product-info-btn" id="product3-modalCall">Подробнее</button>
 									</div>
 								</figure>
 							</div>
+							<!-- Модальное окно к продукту №3 -->
+							<div class="product-modal-wrap mfp-hide" id="product3-modal">
+								<div class="product-modal">
+									<div class="mfp-close"></div>
+									<div class="product-modal-content">
+										<div class="product-modal-top product-modal-top-3">
+											<h2 class="product-modal-title">Доисторические животные</h2>
+											<h3 class="product-modal-subtitle">Аниматронные модели</h3>
+											<div class="product-price">от <b>20 000</b> рублей</div>
+										</div> <!-- /.product-modal-top -->
+										<div class="product-modal-bottom">
+											<p class="product-modal-text">Здесь пишем не большой текст о компании и продукте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех.</p>
+											<button class="btn product-modal-btn">Получить прайс</button>
+											<div class="social">
+												<a href="#" class="social-link social-link-inst"></a>
+												<a href="#" class="social-link social-link-vk"></a>
+											</div>
+										</div> <!-- /.product-modal-bottom -->
+									</div> <!-- /.product-modal-content -->
+								</div> <!-- /.product-modal -->
+							</div> <!-- /.product-modal-wrap -->
 
+							<!-- Продукт №4 -->
 							<div class="col-lg-3 col-md-6 col-12">
 								<figure class="product-model">
-									<img class="product-img" src="img/model4.jpg" alt="Pещерный человек">
+									<img class="product-img" src="img/model4.jpg" alt="Пещерный человек">
 									<figcaption class="product-title">Pещерный человек</figcaption>
 									<div class="product-info">
-										<button class="btn product-info-btn">Подробнее</button>
+										<button class="btn product-info-btn" id="product4-modalCall">Подробнее</button>
 									</div>
 								</figure>
 							</div>
+							<!-- Модальное окно к продукту №4 -->
+							<div class="product-modal-wrap mfp-hide" id="product4-modal">
+								<div class="product-modal">
+									<div class="mfp-close"></div>
+									<div class="product-modal-content">
+										<div class="product-modal-top product-modal-top-4">
+											<h2 class="product-modal-title">Пещерный человек</h2>
+											<h3 class="product-modal-subtitle">Аниматронные модели</h3>
+											<div class="product-price">от <b>20 000</b> рублей</div>
+										</div> <!-- /.product-modal-top -->
+										<div class="product-modal-bottom">
+											<p class="product-modal-text">Здесь пишем не большой текст о компании и продукте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех.</p>
+											<button class="btn product-modal-btn">Получить прайс</button>
+											<div class="social">
+												<a href="#" class="social-link social-link-inst"></a>
+												<a href="#" class="social-link social-link-vk"></a>
+											</div>
+										</div> <!-- /.product-modal-bottom -->
+									</div> <!-- /.product-modal-content -->
+								</div> <!-- /.product-modal -->
+							</div> <!-- /.product-modal-wrap -->
 
+							<!-- Продукт №5 -->
 							<div class="col-lg-3 col-md-6 col-12">
 								<figure class="product-model">
 									<img class="product-img" src="img/model5.jpg" alt="Драконы">
 									<figcaption class="product-title">Dраконы</figcaption>
 									<div class="product-info">
-										<button class="btn product-info-btn">Подробнее</button>
+										<button class="btn product-info-btn" id="product5-modalCall">Подробнее</button>
 									</div>
 								</figure>
 							</div>
+							<!-- Модальное окно к продукту №5 -->
+							<div class="product-modal-wrap mfp-hide" id="product5-modal">
+								<div class="product-modal">
+									<div class="mfp-close"></div>
+									<div class="product-modal-content">
+										<div class="product-modal-top product-modal-top-5">
+											<h2 class="product-modal-title">Драконы</h2>
+											<h3 class="product-modal-subtitle">Аниматронные модели</h3>
+											<div class="product-price">от <b>20 000</b> рублей</div>
+										</div> <!-- /.product-modal-top -->
+										<div class="product-modal-bottom">
+											<p class="product-modal-text">Здесь пишем не большой текст о компании и продукте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех.</p>
+											<button class="btn product-modal-btn">Получить прайс</button>
+											<div class="social">
+												<a href="#" class="social-link social-link-inst"></a>
+												<a href="#" class="social-link social-link-vk"></a>
+											</div>
+										</div> <!-- /.product-modal-bottom -->
+									</div> <!-- /.product-modal-content -->
+								</div> <!-- /.product-modal -->
+							</div> <!-- /.product-modal-wrap -->
 
+							<!-- Продукт №6 -->
 							<div class="col-lg-3 col-md-6 col-12">
 								<figure class="product-model">
 									<img class="product-img" src="img/model6.jpg" alt="Раскопки и окаменелости">
 									<figcaption class="product-title two-string">Rаскопки и окаменелости</figcaption>
 									<div class="product-info">
-										<button class="btn product-info-btn">Подробнее</button>
+										<button class="btn product-info-btn" id="product6-modalCall">Подробнее</button>
 									</div>
 								</figure>
 							</div>
+							<!-- Модальное окно к продукту №6 -->
+							<div class="product-modal-wrap mfp-hide" id="product6-modal">
+								<div class="product-modal">
+									<div class="mfp-close"></div>
+									<div class="product-modal-content">
+										<div class="product-modal-top product-modal-top-6">
+											<h2 class="product-modal-title">Раскопки и окаменелости</h2>
+											<h3 class="product-modal-subtitle">Аниматронные модели</h3>
+											<div class="product-price">от <b>20 000</b> рублей</div>
+										</div> <!-- /.product-modal-top -->
+										<div class="product-modal-bottom">
+											<p class="product-modal-text">Здесь пишем не большой текст о компании и продукте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех.</p>
+											<button class="btn product-modal-btn">Получить прайс</button>
+											<div class="social">
+												<a href="#" class="social-link social-link-inst"></a>
+												<a href="#" class="social-link social-link-vk"></a>
+											</div>
+										</div> <!-- /.product-modal-bottom -->
+									</div> <!-- /.product-modal-content -->
+								</div> <!-- /.product-modal -->
+							</div> <!-- /.product-modal-wrap -->
 
+							<!-- Продукт №7-->
 							<div class="col-lg-3 col-md-6 col-12">
 								<figure class="product-model">
 									<img class="product-img" src="img/model7.jpg" alt="Скелеты динозавров">
 									<figcaption class="product-title">Sкелеты динозавров</figcaption>
 									<div class="product-info">
-										<button class="btn product-info-btn">Подробнее</button>
+										<button class="btn product-info-btn" id="product7-modalCall">Подробнее</button>
 									</div>
 								</figure>
 							</div>
+							<!-- Модальное окно к продукту №7 -->
+							<div class="product-modal-wrap mfp-hide" id="product7-modal">
+								<div class="product-modal">
+									<div class="mfp-close"></div>
+									<div class="product-modal-content">
+										<div class="product-modal-top product-modal-top-7">
+											<h2 class="product-modal-title">Скелеты динозавров</h2>
+											<h3 class="product-modal-subtitle">Аниматронные модели</h3>
+											<div class="product-price">от <b>20 000</b> рублей</div>
+										</div> <!-- /.product-modal-top -->
+										<div class="product-modal-bottom">
+											<p class="product-modal-text">Здесь пишем не большой текст о компании и продукте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех.</p>
+											<button class="btn product-modal-btn">Получить прайс</button>
+											<div class="social">
+												<a href="#" class="social-link social-link-inst"></a>
+												<a href="#" class="social-link social-link-vk"></a>
+											</div>
+										</div> <!-- /.product-modal-bottom -->
+									</div> <!-- /.product-modal-content -->
+								</div> <!-- /.product-modal -->
+							</div> <!-- /.product-modal-wrap -->
 
+							<!-- Продукт №8 -->
 							<div class="col-lg-3 col-md-6 col-12">
 								<figure class="product-model">
 									<img class="product-img" src="img/model8.jpg" alt="Аттракционы-роботы">
 									<figcaption class="product-title">Aттракционы-роботы</figcaption>
 									<div class="product-info">
-										<button class="btn product-info-btn">Подробнее</button>
+										<button class="btn product-info-btn" id="product8-modalCall">Подробнее</button>
 									</div>
 								</figure>
 							</div>
+							<!-- Модальное окно к продукту №8 -->
+							<div class="product-modal-wrap mfp-hide" id="product8-modal">
+								<div class="product-modal">
+									<div class="mfp-close"></div>
+									<div class="product-modal-content">
+										<div class="product-modal-top product-modal-top-8">
+											<h2 class="product-modal-title">Аттракционы-роботы</h2>
+											<h3 class="product-modal-subtitle">Аниматронные модели</h3>
+											<div class="product-price">от <b>20 000</b> рублей</div>
+										</div> <!-- /.product-modal-top -->
+										<div class="product-modal-bottom">
+											<p class="product-modal-text">Здесь пишем не большой текст о компании и продукте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех.</p>
+											<button class="btn product-modal-btn">Получить прайс</button>
+											<div class="social">
+												<a href="#" class="social-link social-link-inst"></a>
+												<a href="#" class="social-link social-link-vk"></a>
+											</div>
+										</div> <!-- /.product-modal-bottom -->
+									</div> <!-- /.product-modal-content -->
+								</div> <!-- /.product-modal -->
+							</div> <!-- /.product-modal-wrap -->
 
+							<!-- Продукт №9 -->
 							<div class="col-lg-3 col-md-6 col-12">
 								<figure class="product-model">
 									<img class="product-img" src="img/model9.jpg" alt="Костюмы динозавров">
 									<figcaption class="product-title">Kостюмы динозавров</figcaption>
 									<div class="product-info">
-										<button class="btn product-info-btn">Подробнее</button>
+										<button class="btn product-info-btn" id="product9-modalCall">Подробнее</button>
 									</div>
 								</figure>
 							</div>
+							<!-- Модальное окно к продукту №9 -->
+							<div class="product-modal-wrap mfp-hide" id="product9-modal">
+								<div class="product-modal">
+									<div class="mfp-close"></div>
+									<div class="product-modal-content">
+										<div class="product-modal-top product-modal-top-9">
+											<h2 class="product-modal-title">Костюмы динозавров</h2>
+											<h3 class="product-modal-subtitle">Аниматронные модели</h3>
+											<div class="product-price">от <b>20 000</b> рублей</div>
+										</div> <!-- /.product-modal-top -->
+										<div class="product-modal-bottom">
+											<p class="product-modal-text">Здесь пишем не большой текст о компании и продукте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех.</p>
+											<button class="btn product-modal-btn">Получить прайс</button>
+											<div class="social">
+												<a href="#" class="social-link social-link-inst"></a>
+												<a href="#" class="social-link social-link-vk"></a>
+											</div>
+										</div> <!-- /.product-modal-bottom -->
+									</div> <!-- /.product-modal-content -->
+								</div> <!-- /.product-modal -->
+							</div> <!-- /.product-modal-wrap -->
 
+							<!-- Продукт №10 -->
 							<div class="col-lg-3 col-md-6 col-12">
 								<figure class="product-model">
 									<img class="product-img" src="img/model10.jpg" alt="Парковые экспозиции">
 									<figcaption class="product-title">Pарковые экспозиции</figcaption>
 									<div class="product-info">
-										<button class="btn product-info-btn">Подробнее</button>
+										<button class="btn product-info-btn" id="product10-modalCall">Подробнее</button>
 									</div>
 								</figure>
 							</div>
+							<!-- Модальное окно к продукту №10 -->
+							<div class="product-modal-wrap mfp-hide" id="product10-modal">
+								<div class="product-modal">
+									<div class="mfp-close"></div>
+									<div class="product-modal-content">
+										<div class="product-modal-top product-modal-top-10">
+											<h2 class="product-modal-title">Парковые экспозиции</h2>
+											<h3 class="product-modal-subtitle">Аниматронные модели</h3>
+											<div class="product-price">от <b>20 000</b> рублей</div>
+										</div> <!-- /.product-modal-top -->
+										<div class="product-modal-bottom">
+											<p class="product-modal-text">Здесь пишем не большой текст о компании и продукте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех.</p>
+											<button class="btn product-modal-btn">Получить прайс</button>
+											<div class="social">
+												<a href="#" class="social-link social-link-inst"></a>
+												<a href="#" class="social-link social-link-vk"></a>
+											</div>
+										</div> <!-- /.product-modal-bottom -->
+									</div> <!-- /.product-modal-content -->
+								</div> <!-- /.product-modal -->
+							</div> <!-- /.product-modal-wrap -->
 
+							<!-- Продукт №11 -->
 							<div class="col-lg-3 col-md-6 col-12">
 								<figure class="product-model">
 									<img class="product-img" src="img/model11.jpg" alt="Светодиодные конструкции">
 									<figcaption class="product-title two-string">Sветодиодные конструкции</figcaption>
 									<div class="product-info">
-										<button class="btn product-info-btn">Подробнее</button>
+										<button class="btn product-info-btn" id="product11-modalCall">Подробнее</button>
 									</div>
 								</figure>
 							</div>
-
-							<div class="product-modal-wrap">
+							<!-- Модальное окно к продукту №11 -->
+							<div class="product-modal-wrap mfp-hide" id="product11-modal">
 								<div class="product-modal">
 									<div class="mfp-close"></div>
 									<div class="product-modal-content">
-										<div class="product-modal-top">
+										<div class="product-modal-top product-modal-top-11">
 											<h2 class="product-modal-title">Светодиодные конструкции</h2>
 											<h3 class="product-modal-subtitle">Аниматронные модели</h3>
 											<div class="product-price">от <b>20 000</b> рублей</div>
-										</div>
+										</div> <!-- /.product-modal-top -->
 										<div class="product-modal-bottom">
-											<div class="product-modal-text"></div>
-										</div>
-									</div>
-								</div>
-							</div>
+											<p class="product-modal-text">Здесь пишем не большой текст о компании и продукте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех.</p>
+											<button class="btn product-modal-btn">Получить прайс</button>
+											<div class="social">
+												<a href="#" class="social-link social-link-inst"></a>
+												<a href="#" class="social-link social-link-vk"></a>
+											</div>
+										</div> <!-- /.product-modal-bottom -->
+									</div> <!-- /.product-modal-content -->
+								</div> <!-- /.product-modal -->
+							</div> <!-- /.product-modal-wrap -->
 
 						</div> <!-- /.row.no-gutters -->
 					</div> <!-- /.product-models -->
 				</div> <!-- /.col -->
 			</div> <!-- /.row -->
 		</section>
-		<!-- PRODUCT END -->
+		<!-- SECTION PRODUCT END -->
+
+		<!-- SECTION VIDEO START -->
+		<section class="video">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="subtitle">Видео-обзор</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="video-wrap">
+						<div class='embed-container js-videoWrapper'>
+							<iframe class="videoIframe js-videoIframe" src="" data-src="https://www.youtube.com/embed/owR64M7Filg?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white" frameborder="0" allowTransparency="true" allowfullscreen></iframe>
+							<button class="videoPoster js-videoPoster"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- SECTION VIDEO END -->
+
+		<!-- SECTION PARTNERS START -->
+		<section class="partners" id="partners">
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center justify-content-md-end">
+					<h2 class="subtitle product-subtitle">Партнерская программа</h2>
+				</div>
+			</div>
+		</section>
+		<!-- SECTION PARTNERS END -->
 
 			</div> <!-- /.inner-bg -->
 		</div> <!-- /.container -->
 	</main> <!-- /.content -->
-	
-	
-	
-
-
 
 
 
